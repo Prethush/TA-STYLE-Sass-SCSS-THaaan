@@ -14,7 +14,7 @@ body {
     font-family: 'Archivo', sans-serif;
     font-size: 1rem;
     color: $tertiary;
-     padding-bottom: 10rem;
+    //  padding-bottom: 10rem;
 }
 
 // Container
@@ -124,15 +124,30 @@ a {
     &-primary {
         background-color: $primary;
         color: $textWhite;
+        &:hover {
+            background-color: $textWhite;
+            border: 1px solid $primary;
+            color: $primary;
+        }
     }
 
     &-secondary {
         border: 1px solid $primary;
         color: $primary;
+        &:hover {
+            background-color: $primary;
+            border: none;
+            color: $textWhite;
+        }
     }
     &-tertiary {
         border: 1px solid $textWhite;
         color: $textWhite;
+        &:hover {
+            background-color: $textWhite;
+            border: none;
+            color: $primary;
+        }
     }
     
 }
@@ -146,4 +161,9 @@ a {
 }
 p {
     font-weight: 300;
+}
+
+.pink-btn {
+    background-color: $primary;
+    color: $textWhite;
 }

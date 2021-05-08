@@ -4,7 +4,7 @@
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, .pricing-list .pricing h4, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -67,7 +67,6 @@ body {
   font-family: 'Archivo', sans-serif;
   font-size: 1rem;
   color: #1b1e24;
-  padding-bottom: 10rem;
 }
 
 .container {
@@ -210,14 +209,32 @@ a {
   color: #fff;
 }
 
+.btn-primary:hover {
+  background-color: #fff;
+  border: 1px solid #dc3c45;
+  color: #dc3c45;
+}
+
 .btn-secondary {
   border: 1px solid #dc3c45;
   color: #dc3c45;
 }
 
+.btn-secondary:hover {
+  background-color: #dc3c45;
+  border: none;
+  color: #fff;
+}
+
 .btn-tertiary {
   border: 1px solid #fff;
   color: #fff;
+}
+
+.btn-tertiary:hover {
+  background-color: #fff;
+  border: none;
+  color: #dc3c45;
 }
 
 .padding {
@@ -230,6 +247,11 @@ a {
 
 p {
   font-weight: 300;
+}
+
+.pink-btn {
+  background-color: #dc3c45;
+  color: #fff;
 }
 
 .bottom-nav .logo, .hero .hero-sub-container .sub-heading, .services h3, .solution .solution-sec h3, .solution article .box1 h4, .features .sec1 h5, .clients h3 {
@@ -292,7 +314,7 @@ p {
 .bottom-nav .main-menu .sub-menu ul {
   position: absolute;
   display: none;
-  padding: 0 2rem;
+  padding: .5rem 2rem;
   border-bottom-left-radius: .3rem;
   border-bottom-right-radius: .3rem;
   z-index: 10;
@@ -301,6 +323,10 @@ p {
 .bottom-nav .main-menu .sub-menu ul li {
   padding: .5rem 0;
   width: 120px;
+}
+
+.bottom-nav .main-menu .sub-menu ul li a {
+  padding: .5rem .5rem;
 }
 
 .bottom-nav .main-menu .sub-menu:hover {
@@ -316,6 +342,12 @@ p {
   background-color: #f2f2f2;
   top: 5.8rem;
   left: 0;
+}
+
+.bottom-nav .main-menu .sub-menu:hover ul li > a:hover {
+  background-color: #aca4a4;
+  color: #dc3c45;
+  border-radius: .4rem;
 }
 
 .hero {
@@ -451,6 +483,12 @@ p {
   opacity: .4;
 }
 
+.clients .img-container img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  opacity: 1;
+}
+
 footer {
   background-color: #343a40;
   color: #fff;
@@ -502,7 +540,7 @@ footer .footer-bottom {
   font-weight: 900;
 }
 
-.sec h6 {
+.sec h6, .sec .pricing-list .pricing h4, .pricing-list .pricing .sec h4 {
   color: #dc3c45;
   font-weight: 600;
   margin-bottom: .7rem;
@@ -559,7 +597,7 @@ footer .footer-bottom {
   font-weight: 600;
 }
 
-.team .team-container .team-img h6 {
+.team .team-container .team-img h6, .team .team-container .team-img .pricing-list .pricing h4, .pricing-list .pricing .team .team-container .team-img h4 {
   color: #dc3c45;
   font-size: .8rem;
   font-weight: 500;
@@ -616,7 +654,7 @@ footer .footer-bottom {
   margin-right: 1rem;
 }
 
-.deals .deals-banner h6 {
+.deals .deals-banner h6, .deals .deals-banner .pricing-list .pricing h4, .pricing-list .pricing .deals .deals-banner h4 {
   font-size: 2rem;
   margin-right: 1rem;
 }
@@ -670,5 +708,110 @@ footer .footer-bottom {
 .contact .contact-list h5 {
   margin: 1rem 0 .5rem 0;
   font-weight: 600;
+}
+
+.pricing-list .pricing h3, .faq-sec h3 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.pricing-list .pricing p, .faq-sec .faq-list .faq p {
+  opacity: .5;
+}
+
+.pricing {
+  background-color: #f2f2f2;
+}
+
+.pricing-list {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.pricing-list .pricing {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.pricing-list .pricing h6, .pricing-list .pricing h4 {
+  font-weight: 500;
+}
+
+.pricing-list .pricing p {
+  margin-bottom: 2rem;
+}
+
+.pricing-list .pricing ul > li {
+  margin: .5rem 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+.pricing-list .pricing .btn {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.pricing-list .pricing .btn:hover {
+  background-color: #dc3c45;
+  color: #fff;
+}
+
+.faq-sec .faq-list {
+  margin-top: 5rem;
+}
+
+.faq-sec .faq-list .faq {
+  border: 1px solid lightgray;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.faq-sec .faq-list .faq h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-sec {
+  padding-bottom: 4rem;
+}
+
+.contact-sec h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.contact-sec .map-sec {
+  margin-top: 5rem;
+}
+
+.contact-sec .map-sec .form {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: center;
+}
+
+.contact-sec .map-sec .form .form-control {
+  display: block;
+  padding: .3rem .5rem;
+  width: 100%;
+  font-size: 1.1rem;
+  opacity: .7;
+  margin: 1rem 0;
+  border: 1px solid #959393;
+  outline: 0;
+}
+
+.contact-sec .map-sec .form .form-control:focus {
+  border: 1px solid blue;
+}
+
+.contact-sec .map-sec .form .btn {
+  display: inline-block;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
