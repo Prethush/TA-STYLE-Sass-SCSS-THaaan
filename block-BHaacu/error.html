@@ -15,7 +15,7 @@
 
     <!-- Top nav -->
     <div class="top-nav">
-        <nav class="flex jcb aic container">
+        <nav class="flex jcb aic container md-flex md-column">
             <ul class="contact-info flex">
                 <li><a href="#"><i class="fas fa-phone"></i>-1-1245 678 980</a></li>
                 <li><a href="#"><i class="far fa-envelope"></i> Info@yourdomain.com</a></li>
@@ -33,29 +33,36 @@
     <div class="bottom-nav">
         <nav class="container flex jcb aic">
             <a href="#"><h1 class="logo"><span class="pink">Uni</span>TECH</h1></a>
-            <ul class="main-menu flex jcb aic">
-                <li class="sub-menu"><a href="index.html">Home</a></li>
-                <li class="sub-menu"><a href="about.html">About Us</a></li>
-                <li class="sub-menu"><a href="services.html">Services</a></li>
-                <li class="sub-menu"><a href="#">Pages <i class="fas fa-caret-down"></i></a>
-                    <ul>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="error.html">404 Page</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu"><a href="#">Blog <i class="fas fa-caret-down"></i></a>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Blog Single</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu"><a href="contact.html">Contact Us</a></li>
-            </ul>
+
+            <label for="toggle" class="bars"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle" name="checkbox">
+
+             <nav class="nav"> 
+                <ul class="main-menu flex jcb aic">
+                    <li class="sub-menu"><a href="index.html">Home</a></li>
+                    <li class="sub-menu"><a href="about.html">About Us</a></li>
+                    <li class="sub-menu"><a href="services.html">Services</a></li>
+                    <li class="sub-menu"><a href="#">Pages <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="error.html">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#">Blog <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="contact.html">Contact Us</a></li>
+                </ul>
+             </nav> 
+            
         </nav>
     </div>
    
-</header>
+    </header>
 
 <main>
     <!-- Error banner -->
@@ -71,18 +78,18 @@
         <h3 class="text-center capitalize">Page not found!</h3>
         <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, atque!</p>
 
-        <article class="contact flex jcb">
-            <div class="contact-list contact1 flex-30 flex column aic">
+        <article class="contact flex jcb md-wrap">
+            <div class="contact-list contact1 flex-30 flex column aic md-100">
                 <div class="circle flex jcc aic"><i class="fas fa-rocket"></i></div>
                 <h5>Address</h5>
                 <address>132 Manhatan Str Newyork, US</address>
             </div>
-            <div class="contact-list contact1 flex-30 flex column aic">
+            <div class="contact-list contact1 flex-30 flex column aic md-100">
                 <div class="circle flex jcc aic"><i class="fas fa-phone"></i></div>
                 <h5>Phone Number</h5>
                 <address>1-234 567 7845</address>
             </div>
-            <div class="contact-list contact1 flex-30 flex column aic">
+            <div class="contact-list contact1 flex-30 flex column aic md-100">
                 <div class="circle flex jcc aic"><i class="far fa-envelope"></i></div>
                 <h5>Email</h5>
                 <address>mail@yourdomain.com</address>
@@ -94,51 +101,51 @@
 
  <!-- Footer -->
 
- <footer>
-    <section class="container flex jcb padding">
-        <div class="col col1 flex-30">
-            <h5>Reach us</h5>
-            <ul class="contact-details">
-                <li><address><i class="fas fa-rocket"></i> #121, Manhatt 7 Avenue, NYC</address></li>
-                <li><a href="#"><i class="fas fa-phone"></i>+1 1234 567 987</a></li>
-                <li><a href="#"><i class="far fa-envelope"></i> info@youdomain.com</a></li>
-            </ul>
-        </div>
-        <div class="col col2 flex-20">
-            <h5>Site links</h5>
-            <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Pricing</a></li>
-             </ul>
-        </div>
-        <div class="col col3 flex-20">
-            <h5>Quick links</h5>
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-        </div>
-        <div class="col col4 flex-20">
-            <h5>Follow us</h5>
-            <ul class="flex social">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </section>
-   
-    <div class="text-center flex column footer-bottom">
-        <small>Boostrap Theme by Web Therapy</small>
-        <small>&#169; All Rights Reserved</small>
-    </div>
+    <footer>
+        <section class="container flex jcb padding md-wrap">
+            <div class="col col1 flex-30 md-100">
+                <h5>Reach us</h5>
+                <ul class="contact-details">
+                    <li><address><i class="fas fa-rocket"></i> #121, Manhatt 7 Avenue, NYC</address></li>
+                    <li><a href="#"><i class="fas fa-phone"></i>+1 1234 567 987</a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i> info@youdomain.com</a></li>
+                </ul>
+            </div>
+            <div class="col col2 flex-20 md-45">
+                <h5>Site links</h5>
+                <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col col3 flex-20 md-45">
+                <h5>Quick links</h5>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col col4 flex-20">
+                <h5>Follow us</h5>
+                <ul class="flex social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
     
-</footer>
+        <div class="text-center flex column footer-bottom">
+            <small>Boostrap Theme by Web Therapy</small>
+            <small>&#169; All Rights Reserved</small>
+        </div>
+        
+    </footer>
 </body>
 </html>

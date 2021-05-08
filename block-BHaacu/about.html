@@ -16,7 +16,7 @@
 
         <!-- Top nav -->
         <div class="top-nav">
-            <nav class="flex jcb aic container">
+            <nav class="flex jcb aic container md-flex md-column">
                 <ul class="contact-info flex">
                     <li><a href="#"><i class="fas fa-phone"></i>-1-1245 678 980</a></li>
                     <li><a href="#"><i class="far fa-envelope"></i> Info@yourdomain.com</a></li>
@@ -34,30 +34,36 @@
         <div class="bottom-nav">
             <nav class="container flex jcb aic">
                 <a href="#"><h1 class="logo"><span class="pink">Uni</span>TECH</h1></a>
-                <ul class="main-menu flex jcb aic">
-                    <li class="sub-menu"><a href="index.html">Home</a></li>
-                    <li class="sub-menu"><a href="about.html">About Us</a></li>
-                    <li class="sub-menu"><a href="services.html">Services</a></li>
-                    <li class="sub-menu"><a href="#">Pages <i class="fas fa-caret-down"></i></a>
-                        <ul>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="error.html">404 Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu"><a href="#">Blog <i class="fas fa-caret-down"></i></a>
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Blog Single</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu"><a href="contact.html">Contact Us</a></li>
-                </ul>
+    
+                <label for="toggle" class="bars"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="checkbox">
+    
+                 <nav class="nav"> 
+                    <ul class="main-menu flex jcb aic">
+                        <li class="sub-menu"><a href="index.html">Home</a></li>
+                        <li class="sub-menu"><a href="about.html">About Us</a></li>
+                        <li class="sub-menu"><a href="services.html">Services</a></li>
+                        <li class="sub-menu"><a href="#">Pages <i class="fas fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="error.html">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu"><a href="#">Blog <i class="fas fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                 </nav> 
+                
             </nav>
         </div>
        
     </header>
-
    <!-- About banner -->
     <main>
         <div class="banner">
@@ -67,15 +73,15 @@
 
         <!-- Features -->
 
-        <article class="features container flex jcb aic">
+        <article class="features container flex jcb aic md-wrap">
 
-            <div class="sec sec1 flex-35">
+            <div class="sec sec1 flex-35 md-100">
                 <h6>About us</h6>
                 <h5>We are a Industry leader <br> in technical and <br> consulting services</h5>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde harum fuga enim. Ab delectus excepturi placeat, commodi ex magnam quisquam neque quam repellendus, adipisci, minima dolores? Voluptates nisi unde facere pariatur rerum! Distinctio quae dolore eius atque ex. Consequatur, excepturi? magnam quisquam neque quam repellendus, adipisci, minima dolores? Voluptates nisi unde facere pariatur rerum! Distinctio</p>
             </div>  
 
-            <div class="sec sec2 flex-50 font0">
+            <div class="sec sec2 flex-50 font0 md-100">
                 <img src="assets/media/img-woman-1.jpg" alt="lady" class="imgFull">
             </div>
         </article>
@@ -83,11 +89,11 @@
 
         <!-- Values -->
 
-        <article class="values container flex jcb padding">
-            <div class="value value1 flex-35">
+        <article class="values container flex jcb padding md-wrap">
+            <div class="value value1 flex-35 md-100">
                 <img src="assets/media/vision.svg" alt="vision" class="imgFull font0">
             </div>
-            <div class="value value2 flex-50">
+            <div class="value value2 flex-50 md-100">
 
                 <div class="sub-value flex jcb aic">
                     <i class="fas fa-rocket"></i>
@@ -120,23 +126,23 @@
         <section class="team padding">
             <h3 class="text-center">Our Team</h3>
             <p class="text-center">We are ready to grow with your business</p>
-            <article class="team-container flex jcb container">
-                <div class="team-img flex-23 text-center">
+            <article class="team-container flex jcb container md-wrap">
+                <div class="team-img flex-23 text-center md-100">
                     <img src="assets/media/team1.jpg" alt="team1" class="imgFull">
                     <h5>James Rally</h5>
                     <h6 class="upper">Cto</h6>
                 </div>
-                <div class="team-img flex-23 text-center">
+                <div class="team-img flex-23 text-center md-100">
                     <img src="assets/media/team2.jpg" alt="team2" class="imgFull">
                     <h5>Kristen Viller</h5>
                     <h6 class="upper">Tech Director</h6>
                 </div>
-                <div class="team-img flex-23 text-center">
+                <div class="team-img flex-23 text-center md-100">
                     <img src="assets/media/team3.jpg" alt="team3" class="imgFull">
                     <h5>Johanna Care</h5>
                     <h6 class="upper">Hr Director </h6>
                 </div>
-                <div class="team-img flex-23 text-center">
+                <div class="team-img flex-23 text-center md-100">
                     <img src="assets/media/team4.jpg" alt="team4" class="imgFull">
                     <h5>Bruce Williamson</h5>
                     <h6 class="upper">CTO</h6>
@@ -182,10 +188,9 @@
     </main>
    
      <!-- Footer -->
-
      <footer>
-        <section class="container flex jcb padding">
-            <div class="col col1 flex-30">
+        <section class="container flex jcb padding md-wrap">
+            <div class="col col1 flex-30 md-100">
                 <h5>Reach us</h5>
                 <ul class="contact-details">
                     <li><address><i class="fas fa-rocket"></i> #121, Manhatt 7 Avenue, NYC</address></li>
@@ -193,7 +198,7 @@
                     <li><a href="#"><i class="far fa-envelope"></i> info@youdomain.com</a></li>
                 </ul>
             </div>
-            <div class="col col2 flex-20">
+            <div class="col col2 flex-20 md-45">
                 <h5>Site links</h5>
                 <ul>
                         <li><a href="#">Home</a></li>
@@ -203,7 +208,7 @@
                         <li><a href="#">Pricing</a></li>
                  </ul>
             </div>
-            <div class="col col3 flex-20">
+            <div class="col col3 flex-20 md-45">
                 <h5>Quick links</h5>
                 <ul>
                     <li><a href="#">Blog</a></li>

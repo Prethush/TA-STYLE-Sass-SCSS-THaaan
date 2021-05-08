@@ -32,6 +32,10 @@
         }
     
     }   
+
+    #toggle, .bars {
+        display: none;
+    }
     .main-menu  {
          height: 100%;
         .sub-menu {
@@ -292,3 +296,8 @@ footer {
         font-weight: 200;
     }
 }
+
+
+
+
+
